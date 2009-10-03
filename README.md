@@ -18,11 +18,12 @@ Installation
 
 1.  Go to your DeepaMehta 3 installation directory:
         cd deepamehta3
-2.  Download DeepaMehta 3 Time Plugin:
+2.  Download DeepaMehta 3 Contacts Plugin:
         couchapp vendor install git://github.com/jri/dm3-contacts.git
-3.  Add plugin to DeepaMehta 3 by inserting a line to _attachments/javascript/plugins.js
+3.  Add plugin to DeepaMehta 3 by inserting a line to `_attachments/javascript/plugins.js`
         add_plugin("vendor/dm3-contacts/script/dm3_contacts.js")
-4.  Add additional stuff by copying a directory:
+4.  Add additional stuff by copying two directories:
+        cp -r vendor/dm3-contacts/views/dm3-contacts_by-name views
         cp -r vendor/dm3-contacts/fulltext/dm3-contacts fulltext
 5.  Upload changes to CouchDB:
         couchapp push --atomic http://localhost:5984/deepamehta3-db
@@ -38,4 +39,4 @@ Running
 
 ------------
 Jörg Richter  
-29.9.2009
+Oct 3, 2009
