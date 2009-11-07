@@ -2,7 +2,6 @@
 DeepaMehta 3 Contacts Plugin
 ============================
 
-
 Adds a "Contact" document type to maintain your address book.
 
 
@@ -20,7 +19,7 @@ Installation
         cd deepamehta3
 2.  Download DeepaMehta 3 Contacts Plugin:
         couchapp vendor install git://github.com/jri/dm3-contacts.git
-3.  Add plugin to DeepaMehta 3 by inserting a line to `_attachments/javascript/plugins.js`
+3.  Add plugin to DeepaMehta 3 by inserting a line to `_attachments/javascript/plugins.js`:
         add_plugin("vendor/dm3-contacts/script/dm3_contacts.js")
 4.  Add additional stuff by copying two directories:
         cp -r vendor/dm3-contacts/views/dm3-contacts_by-name views
@@ -29,8 +28,8 @@ Installation
         couchapp push --atomic http://localhost:5984/deepamehta3-db
 
 
-Running
--------
+Usage
+-----
 
 1.  Visit DeepaMehta 3 in your webbrowser (resp. press reload):
         http://localhost:5984/deepamehta3-db/_design/deepamehta3/index.html

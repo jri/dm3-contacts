@@ -74,7 +74,8 @@ dm3_contacts.prototype = {
                     content: ""
                 }
             ],
-            implementation: "PlainDocument"
+            implementation: "PlainDocument",
+            icon_src: "vendor/dm3-contacts/images/bird.png"
         }
     }
 }
