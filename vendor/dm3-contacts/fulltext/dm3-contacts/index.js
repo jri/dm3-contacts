@@ -6,6 +6,7 @@ function(doc) {
 
     var ret = new Document();
 
+    ret.add(doc.topic_type, {store: "yes", index: "not_analyzed"})
     ret.add(get_field("Name").content, {store: "yes"});
     ret.add(get_field("Email").content, {store: "yes"});
 
