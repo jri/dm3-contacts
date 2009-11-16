@@ -1,6 +1,6 @@
 function(doc) {
 
-    if (doc.type != "Topic" || doc.topic_type != "Contact") {
+    if (doc.type != "Topic" || doc.topic_type != "Person" && doc.topic_type != "Institution") {
         return
     }
 
