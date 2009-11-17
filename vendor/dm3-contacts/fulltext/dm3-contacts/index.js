@@ -10,6 +10,16 @@ function(doc) {
     ret.add(get_field("Name").content, {store: "yes"});
     ret.add(get_field("Email").content, {store: "yes"});
 
+    return ret;
+
+
+
+    /***************/
+    /*** Helpers ***/
+    /***************/
+
+
+
     function get_field(field_id) {
         for (var i = 0, field; field = doc.fields[i]; i++) {
             if (field.id == field_id) {
@@ -17,6 +27,4 @@ function(doc) {
             }
         }
     }
-
-    return ret;
 }

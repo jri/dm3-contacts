@@ -24,7 +24,7 @@ function dm3_contacts() {
             {id: "Notes",   model: {type: "text"}, view: {editor: "multi line", lines: 4}, content: ""}
         ],
         view: {
-            icon_src: "vendor/dm3-contacts/images/bird.png"
+            icon_src: "vendor/dm3-contacts/images/birdhouse.png"
         },
         implementation: "PlainDocument"
     }
