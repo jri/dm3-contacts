@@ -22,7 +22,7 @@ Installation
 2.  Download DeepaMehta 3 Contacts Plugin:
         couchapp vendor install git://github.com/jri/dm3-contacts.git
 
-3.  Activate the plugin by inserting this line to DeepaMehta's `_attachments/javascript/plugins.js`:
+3.  Activate the plugin by inserting one line to DeepaMehta's `_attachments/javascript/plugins.js`:
         add_plugin("vendor/dm3-contacts/script/dm3_contacts.js")
 
 4.  Add additional stuff by copying two directories:
@@ -30,7 +30,7 @@ Installation
         cp -r vendor/dm3-contacts/fulltext/dm3-contacts fulltext
 
 5.  Upload changes to CouchDB:
-        couchapp push --atomic http://localhost:5984/deepamehta3-db
+        couchapp push http://localhost:5984/deepamehta3-db
 
 
 Usage
@@ -42,6 +42,12 @@ Usage
 2.  You'll find the additional document types "Person" and "Institution" in the type menu (next to the "Create" button).
 
 
+Version History
+---------------
+
+`v0.2` -- Dec  1, 2009 -- Basic functionality. Requires DeepaMehta 3 v0.2
+
+
 ------------
 Jörg Richter  
-Nov 16, 2009
+Dec 1, 2009
