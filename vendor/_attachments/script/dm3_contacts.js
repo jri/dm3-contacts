@@ -1,6 +1,6 @@
 function dm3_contacts() {
 
-    types["Person"] = {
+    add_topic_type("Person", {
         fields: [
             {id: "Name",    model: {type: "text"}, view: {editor: "single line"},          content: ""},
             {id: "Phone",   model: {type: "text"}, view: {editor: "multi line", lines: 2}, content: ""},
@@ -13,8 +13,9 @@ function dm3_contacts() {
             icon_src: "vendor/dm3-contacts/images/bird.png"
         },
         implementation: "PlainDocument"
-    }
-    types["Institution"] = {
+    })
+
+    add_topic_type("Institution", {
         fields: [
             {id: "Name",    model: {type: "text"}, view: {editor: "single line"},          content: ""},
             {id: "Phone",   model: {type: "text"}, view: {editor: "multi line", lines: 2}, content: ""},
@@ -27,5 +28,5 @@ function dm3_contacts() {
             icon_src: "vendor/dm3-contacts/images/birdhouse.png"
         },
         implementation: "PlainDocument"
-    }
+    })
 }
